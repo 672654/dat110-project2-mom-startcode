@@ -5,7 +5,6 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 import no.hvl.dat110.common.TODO;
-import no.hvl.dat110.common.Logger;
 import no.hvl.dat110.messagetransport.Connection;
 
 public class Storage {
@@ -54,8 +53,11 @@ public class Storage {
 
 		// TODO: add corresponding client session to the storage
 		// See ClientSession class
+		ClientSession session = getSession(user);
+		clients.put(user, session);
 		
-		throw new UnsupportedOperationException(TODO.method());
+		
+		//throw new UnsupportedOperationException(TODO.method());
 		
 	}
 
