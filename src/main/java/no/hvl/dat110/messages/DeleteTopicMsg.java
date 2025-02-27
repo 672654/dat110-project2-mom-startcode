@@ -27,7 +27,7 @@ public class DeleteTopicMsg extends Message {
 	
 	@Override
 	public String toString(){
-		return "Message [type=" + super.getType() + ", user=" + super.getUser() + ", topic="+getTopic()+"]";
+		return "Message [type=" + super.getType() + ", user=" + super.getUser() + ", topic= "+getTopic()+"]";
 	}
 
 }
