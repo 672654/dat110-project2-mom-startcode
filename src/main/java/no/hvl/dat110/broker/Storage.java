@@ -85,7 +85,7 @@ public class Storage {
 		// Hint: to obtain an empty set of subscribers when creating a new topic 
 				//you can use the method ConcurrentHashMap.newKeySet()
 
-		subscriptions.putIfAbsent(topic, ConcurrentHashMap.newKeySet());
+		subscriptions.put(topic, ConcurrentHashMap.newKeySet());
 
 		//throw new UnsupportedOperationException(TODO.method());
 
