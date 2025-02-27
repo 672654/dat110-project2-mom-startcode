@@ -38,7 +38,7 @@ public class PublishMsg extends Message {
 
 	@Override
 	public String toString(){
-		return "Message [type=" + super.getType() + ", user=" + super.getUser() + ", topic= "+getTopic()+", message="+getMessage()+s"]";
+		return "Message [type=" + super.getType() + ", user=" + super.getUser() + ", topic= "+getTopic()+", message="+getMessage()+"]";
 	}
 
 }
