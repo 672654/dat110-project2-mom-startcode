@@ -24,5 +24,11 @@ public class UnsubscribeMsg extends Message {
 		this.topic = topic;
 	}
 
+
+	@Override
+	public String toString(){
+		return "Message [type=" + super.getType() + ", user=" + super.getUser() + ", topic= "+getTopic()+"]";
+	}
+
 	
 }
